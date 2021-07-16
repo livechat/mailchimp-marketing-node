@@ -1,8 +1,9 @@
 {
-  "name": "@mailchimp/mailchimp_marketing",
-  "version": "3.0.54",
-  "description": "The official Node client library for the Mailchimp Marketing API",
-  "license": "Apache 2.0",
+  "name": "@livechat/node-mailchimp-marketing-api-client",
+  "version": "3.0.55",
+  "description": "The unofficial Node client library for the Mailchimp Marketing API",
+  "private": true,
+  "license": "UNLICENSED",
   "main": "src/index.js",
   "scripts": {
     "test": "jest --setupFiles dotenv/config"
@@ -18,5 +19,9 @@
     "mocha": "~2.3.4",
     "sinon": "1.17.3",
     "jest": "^26.2.2"
+  },
+  "engines": {
+    "node": "^14.17.0",
+    "npm": "^7.19.0"
   }
 }

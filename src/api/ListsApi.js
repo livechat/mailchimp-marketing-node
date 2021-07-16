@@ -650,6 +650,7 @@ module.exports = function(apiClient) {
    * @param {module:model/String} opts.sortField Returns files sorted by the specified field.
    * @param {module:model/String} opts.sortDir Determines the order direction for sorted results.
    * @param {Boolean} opts.hasEcommerceStore Restrict results to lists that contain an active, connected, undeleted ecommerce store.
+   * @param {Boolean} opts.includeTotalContacts Return the total_contacts field in the stats response, which contains an approximate contact count for the given list.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with an object containing data of type {@link module:model/SubscriberLists} and HTTP response
    */
   this.getAllListsWithHttpInfo = function(opts) {
@@ -670,7 +671,8 @@ module.exports = function(apiClient) {
       'email': opts['email'],
       'sort_field': opts['sortField'],
       'sort_dir': opts['sortDir'],
-      'has_ecommerce_store': opts['hasEcommerceStore']
+      'has_ecommerce_store': opts['hasEcommerceStore'],
+      'include_total_contacts': opts['includeTotalContacts']
     };
     var headerParams = {
     };
@@ -705,6 +707,7 @@ module.exports = function(apiClient) {
    * @param {module:model/String} opts.sortField Returns files sorted by the specified field.
    * @param {module:model/String} opts.sortDir Determines the order direction for sorted results.
    * @param {Boolean} opts.hasEcommerceStore Restrict results to lists that contain an active, connected, undeleted ecommerce store.
+   * @param {Boolean} opts.includeTotalContacts Return the total_contacts field in the stats response, which contains an approximate contact count for the given list.
    * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:model/SubscriberLists}
    */
   this.getAllLists = function(opts) {

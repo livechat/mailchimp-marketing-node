@@ -2,7 +2,6 @@
   "name": "@livechat/node-mailchimp-marketing-api-client",
   "version": "3.0.55",
   "description": "The unofficial Node client library for the Mailchimp Marketing API",
-  "private": true,
   "license": "UNLICENSED",
   "main": "src/index.js",
   "scripts": {
